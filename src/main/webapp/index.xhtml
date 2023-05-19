@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+>
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+	<h:outputStylesheet library="css" name="styles.css" />
+	
+	<title>APS - Desenvolvimento WEB 2023.1</title>
+</h:head>
+<h:body>
+
+	<h:form>
+		<p:card style="width: 40rem; margin: 60px auto">
+	    <f:facet name="title">
+        	Cadastro de Carros
+    	</f:facet>
+    	
+			<h:panelGrid
+				 columns="2"
+                 layout="grid"
+                 styleClass="ui-panelgrid-blank ui-fluid"
+                 style="border:0px none; background-color:transparent;"
+             >
+             
+             	<p:row>
+  				    <div class="field">
+				        <p:outputLabel for="modelo" styleClass="block">Modelo</p:outputLabel>
+				        <p:inputText id="modelo" styleClass="block"/>
+				        <!-- <small class="block">Enter your username to reset your password.</small> -->
+				    </div>
+             	</p:row>
+             	
+             	<p:row>
+         	   		<div class="field">
+				        <p:outputLabel for="marca" styleClass="block">Marca</p:outputLabel>
+				        <p:inputText id="marca" styleClass="block"/>
+				        <!-- <small class="block">Enter your username to reset your password.</small> -->
+			    	</div>
+				</p:row>
+
+			</h:panelGrid>
+			
+			<f:facet name="footer">
+		        <p:commandButton icon="pi pi-check" value="Salvar"/>
+		        <p:commandButton icon="pi pi-times" value="Limpar" styleClass="ui-button-secondary" style="margin-left: .5em"/>
+		    </f:facet>
+		</p:card>
+	</h:form>
+
+
+</h:body>
+</html>

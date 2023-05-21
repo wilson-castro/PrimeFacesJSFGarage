@@ -1,32 +1,24 @@
-package bean;
+package Beans;
 
-import java.io.Serializable;
 import java.util.List;
 
-import javax.annotation.PostConstruct;
-import javax.faces.bean.ViewScoped;
+import javax.faces.bean.ManagedBean;
 import javax.inject.Inject;
-import javax.inject.Named;
 
 import model.entities.Carro;
 import services.CarroService;
 
-@Named
-@ViewScoped
-public class CarroBean implements Serializable {
+@ManagedBean
+public class CarroBean {
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
-
-	private CarroService carroService;
+	
 	@Inject
-	private Carro carro;
+	public CarroService carroService;
 	@Inject
-	private List<Carro> carros;
+	public Carro carro;
+	
+	public List<Carro> carros;
 
-	@PostConstruct
 	public void load() {
 		carros = carroService.listarTodos();
 	}
@@ -43,9 +35,11 @@ public class CarroBean implements Serializable {
 		return carros;
 	}
 
-	public void add() {
+	public void adicionar() {
 		try {
 			carroService.salvar(carro);
+			carro = new Carro();
+			
 		} catch (Exception e) {
 			System.out.println("Ocorreu um erro:" + e.getMessage());
 		}

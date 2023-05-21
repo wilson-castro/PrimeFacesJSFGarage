@@ -4,5 +4,5 @@ import model.entities.Carro;
 import utils.DaoGenerico;
 
 // Carro Repository/DAO
-public class DAO extends DaoGenerico<Carro, Integer> {
+public  class DAO extends DaoGenerico<Carro, Integer> {
 }

@@ -43,7 +43,10 @@ public class Carro implements Serializable{
 	@Enumerated(EnumType.STRING)
 	private TipoCombustivel combustivel;
 	
-	
+	public Carro() {
+		super();
+
+	}
 	public Carro( String modelo, String marca, Date dataFabricacao, Float velocidadeMaxima, TipoCombustivel combustivel) {
 		super();
 		this.modelo = modelo;

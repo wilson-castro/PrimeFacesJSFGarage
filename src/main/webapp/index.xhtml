@@ -31,15 +31,15 @@
              	<p:row>
   				    <div class="field">
 				        <p:outputLabel for="modelo" styleClass="block">Modelo</p:outputLabel>
-				        <p:inputText id="modelo" styleClass="block"/>
+				        <p:inputText id="modelo" styleClass="block" value="#{carroBean.carro.modelo}"/>
 				        <!-- <small class="block">Enter your username to reset your password.</small> -->
 				    </div>
              	</p:row>
              	
              	<p:row>
          	   		<div class="field">
-				        <p:outputLabel for="marca" styleClass="block">Marca</p:outputLabel>
-				        <p:inputText id="marca" styleClass="block"/>
+				        <p:outputLabel for="marca" styleClass="block" >Marca</p:outputLabel>
+				        <p:inputText id="marca" styleClass="block" value="#{carroBean.carro.marca}"/>
 				        <!-- <small class="block">Enter your username to reset your password.</small> -->
 			    	</div>
 				</p:row>
@@ -47,7 +47,7 @@
 			</h:panelGrid>
 			
 			<f:facet name="footer">
-		        <p:commandButton icon="pi pi-check" value="Salvar"/>
+		        <p:commandButton icon="pi pi-check" value="Salvar" action="#{carroBean.add}"/>
 		        <p:commandButton icon="pi pi-times" value="Limpar" styleClass="ui-button-secondary" style="margin-left: .5em"/>
 		    </f:facet>
 		</p:card>

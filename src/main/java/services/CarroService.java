@@ -1,22 +1,16 @@
 package services;
 
-import java.io.Serializable;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-import javax.inject.Inject;
-
 import model.daos.DAO;
 import model.entities.Carro;
 
-public class CarroService implements Serializable {
+public class CarroService {
 	
-	private static final long serialVersionUID = 1L;
-	
-	@Inject
 	private final DAO carroRepository;
 
 	public CarroService() {

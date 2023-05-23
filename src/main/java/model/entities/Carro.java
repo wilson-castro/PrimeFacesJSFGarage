@@ -14,6 +14,8 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import org.hibernate.annotations.CreationTimestamp;
+
 import model.enums.TipoCombustivel;
 
 @Entity
@@ -21,7 +23,7 @@ import model.enums.TipoCombustivel;
 public class Carro implements Serializable{
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
@@ -32,8 +34,9 @@ public class Carro implements Serializable{
 	@Column(nullable = false)
 	private String marca;
 	
-	@Column(nullable = false)
-	@Temporal(TemporalType.DATE)
+	@Column(name = "data_fabricacao", nullable = false)
+	@Temporal(TemporalType.TIMESTAMP)
+	@CreationTimestamp
 	private Date dataFabricacao;
 	
 	@Column(nullable = false)

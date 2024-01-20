@@ -9,11 +9,11 @@
 <h2>Tecnologias Utilizadas</h2>
 
 <ul>
-    <li>Java 11</li>
-    <li>Tomcat 10</li>
-    <li>JSF PrimeFaces</li>
-    <li>Hibernate</li>
-    <li>Postgres</li>
+    <li><code>Java 11</code></li>
+    <li><code>Tomcat 10</code></li>
+    <li><code>JSF PrimeFaces</code></li>
+    <li><code>Hibernate</code></li>
+    <li><code>Postgres</code></li>
 </ul>
 
 <h2>Requisitos</h2>
@@ -37,31 +37,31 @@
 <ol>
 <li>Clone o projeto do GitHub:</li>
 
-  ```bash
+  <code>
     git clone https://github.com/wilson-castro/PrimeFacesJSFGarage.git
-  ```
+  </code>
 
 <li>Acesse a pasta do projeto:</li>
 
-```bash
+<code>
   cd PrimeFacesJSFGarage
-```
+</code>
 
   <li>Crie uma base de dados Postgres chamada `primefaces-garage`.</li>
 
   <li>Execute o script de criação de tabelas:</li>
 
-```bash
-psql -U postgres -d primefaces-garage -f src/main/resources/db/create.sql
-```
+<code>
+    psql -U postgres -d primefaces-garage -f src/main/resources/db/create.sql
+</code>
 
   <li>Abra o arquivo `src/main/resources/META-INF/persistence.xml` e altere as credenciais do banco de dados para corresponder às suas configurações.</li>
 
   <li>Execute o projeto usando o Tomcat:</li>
 
-```bash
-mvn tomcat:run
-```
+<code>
+    mvn tomcat:run
+</code>
 
 </ol>
 

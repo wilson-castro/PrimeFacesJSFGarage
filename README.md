@@ -8,13 +8,16 @@
 
 <h2>Tecnologias Utilizadas</h2>
 
-<ul>
-    <li><code>Java 11</code></li>
-    <li><code>Tomcat 10</code></li>
-    <li><code>JSF PrimeFaces</code></li>
-    <li><code>Hibernate</code></li>
-    <li><code>Postgres</code></li>
-</ul>
+<p>
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" title="java" alt="java" width="60" height="60"/>
+ &nbsp;&nbsp;&nbsp;
+ <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=Hibernate&logoColor=white" title="Hibernate" alt="Hibernate" width="170" height="50"/>
+ &nbsp;&nbsp;&nbsp;
+ <img src="https://www.primefaces.org/wp-content/uploads/2018/05/primetek_logo.png" alt="JSF PrimeFaces" title="JSF PrimeFaces" width="120" height="50"/>
+ &nbsp;&nbsp;&nbsp;
+ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg" title="postgresql" alt="postgresql" width="60" height="50"/>
+</p>
+
 
 <h2>Requisitos</h2>
 

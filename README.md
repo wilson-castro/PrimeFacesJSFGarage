@@ -37,31 +37,23 @@
 <ol>
 <li>Clone o projeto do GitHub:</li>
 
-  <code>
-    git clone https://github.com/wilson-castro/PrimeFacesJSFGarage.git
-  </code>
+<code>git clone https://github.com/wilson-castro/PrimeFacesJSFGarage.git</code>
 
 <li>Acesse a pasta do projeto:</li>
 
-<code>
-  cd PrimeFacesJSFGarage
-</code>
+<code>cd PrimeFacesJSFGarage</code>
 
   <li>Crie uma base de dados Postgres chamada `primefaces-garage`.</li>
 
   <li>Execute o script de criação de tabelas:</li>
 
-<code>
-    psql -U postgres -d primefaces-garage -f src/main/resources/db/create.sql
-</code>
+<code>psql -U postgres -d primefaces-garage -f src/main/resources/db/create.sql</code>
 
   <li>Abra o arquivo `src/main/resources/META-INF/persistence.xml` e altere as credenciais do banco de dados para corresponder às suas configurações.</li>
 
   <li>Execute o projeto usando o Tomcat:</li>
 
-<code>
-    mvn tomcat:run
-</code>
+<code>mvn tomcat:run</code>
 
 </ol>
 
